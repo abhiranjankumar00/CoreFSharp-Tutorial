@@ -49,4 +49,4 @@
 ## Extra info
 - To check _.net core version_: `dotnet --version`
 - List subprojects referenced in solution file (execute it from project root directory): `dotnet sln list`
-- Files to be considered in .gitignore: _*/bin_, _*/obj_, _*.swp_, _*/wwwroot_
+- Files to be considered in .gitignore: _*/bin_, _*/obj_, _*.swp_
