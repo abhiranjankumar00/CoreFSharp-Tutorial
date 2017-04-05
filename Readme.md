@@ -25,10 +25,18 @@
     - `cd CoreFSharp`
 - **Create solution File:** `dotnet new sln`
 - **Create a mvc subproject:**
-    - Create the sub-directory first. `mkdir CoreFSharp.Web; cd CoreFSharp.Web`
+    - Create the sub-directory first: `mkdir CoreFSharp.Web; cd CoreFSharp.Web`
     - Initialize sub-project: `dotnet new mvc -lang f#`
 - **Reference subproject in solution file:** `dotnet sln add ./CoreFSharp.Web/CoreFSharp.Web.fsproj`
     - Verify it by calling `dotnet sln list`
+    - Rebuild project: `dotnet restore; dotnet build`
+- **Create a library sub-project:**
+    - Create the sub-directory first: `mkdir CoreFSharp.Library; cd CoreFSharp.Library`
+    - Initialize sub-project: `dotnet new classlib -lang f#`
+- **Reference subproject in solution file:** `dotnet sln add ./CoreFSharp.Library/CoreFSharp.Library.fsproj`
+    - Verify it by calling `dotnet sln list`
+    - Rebuild project: `dotnet restore; dotnet build`
+
 
 ## Extra info
 - To check _.net core version_: `dotnet --version`
