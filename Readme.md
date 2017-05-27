@@ -1,4 +1,4 @@
-# Getting Started with .NET Core using F#
+# Getting Started with .NET Core using F# & VsCode debuuger
 
 - Reference: [Youtube: Getting Started with .NET Core using F#](https://www.youtube.com/watch?v=2xG31sUsCdc)
 - Uses [Kestrel web server](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/kestrel)
@@ -43,7 +43,10 @@
     </ItemGroup>
     ```
 - **Restore, Rebuild:** `dotnet restore; dotnet build`
-- **Launch web server:** `cd CoreFSharp.Web; dotnet run`. _Note_ You should launch it from the mvc sub-project.
+- **Launch web server w/o Debugger:** `cd CoreFSharp.Web; dotnet run`. _Note_ You should launch it from the mvc sub-project.
+- **Launch web server /w Debugger:**
+    In VsCode, start debug session with _.NET Core Launch (web)_ (or just press `F5`).
+    - *Note:* Make sure to set current working directory (`cwd`) in _.vscode/launch.json_ to web sub-project
 
 
 ## Extra info
