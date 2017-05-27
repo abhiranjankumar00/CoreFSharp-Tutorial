@@ -44,9 +44,11 @@
     ```
 - **Restore, Rebuild:** `dotnet restore; dotnet build`
 - **Launch web server w/o Debugger:** `cd CoreFSharp.Web; dotnet run`. _Note_ You should launch it from the mvc sub-project.
+
+## Debug session
 - **Launch web server /w Debugger:**
     In VsCode, start debug session with _.NET Core Launch (web)_ (or just press `F5`).
-    - *Note:* Make sure to set current working directory (`cwd`) in _.vscode/launch.json_ to web sub-project
+    - *Note:* Make sure to set current working directory (`cwd` in _.vscode/launch.json_ to web sub-project
 
 
 ## Extra info
